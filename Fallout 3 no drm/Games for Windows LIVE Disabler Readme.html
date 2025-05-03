@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en">
+<style type="text/css">
+body {
+background-color: #999999;
+font-family: "Bookman Old Style";
+color: #333333;
+}
+.heading {
+font-weight: bold;
+font-size: 150%;
+background-color: #888888;
+margin-top: 0in;
+margin-bottom: 0in;
+border-top: 1px solid #333333;
+border-bottom: 1px solid #333333;
+padding: 0in 0.1in 0.03in;
+}
+.main {
+background-color: #888888;
+margin-top: 0.1in;
+margin-bottom: 0in;
+border-top: 1px solid #333333;
+border-bottom: 1px solid #333333;
+padding: 0in 0.1in 0.03in;
+text-align: center;
+}
+.change {
+font-weight: bold;
+background-color: #888888;
+margin-top: 0.1in;
+margin-bottom: 0in;
+border-top: 1px solid #333333;
+border-bottom: 1px solid #333333;
+padding: 0in 0.2in 0.01in;
+}
+a:link {
+color: #333333;
+font-weight: bold;
+}
+a:visited {
+color: #333333;
+}
+.hidden {
+font-weight: bold;
+color: #999999;
+}
+</style>
+<title>Fallout 3: Games for Windows LIVE Disabler</title>
+</head>
+<body>
+
+<p align="center" class="main"><font size="6"><b>Fallout 3: Games for Windows LIVE Disabler</b></font>
+<br>
+v1.2.2
+<br>
+By <a href="mailto:quarny@gmail.com">Quarn</a></p>
+<br><br>
+
+This program allows you to do the following to Games for Windows LIVE in Fallout 3: 
+<ul>
+<li>Stop Games for Windows LIVE from running in Fallout 3 and prevent its dll files from loading which reduces the time it takes for Fallout 3 to startup.
+<li>Remove the "LIVE" button at the main menu.
+<li>Allow you to bind the "Home" key to whatever action you want.
+<li>Allow you to move all of your DLC's out of their "hidden" G4WL folder and into your Fallout 3 folder.
+</ul>
+
+
+
+<br><br><br><p class="heading"><a>Important Notes\Issues</a></p>
+<ul>
+<li>This will work with Fallout 3 v1.0 or higher.
+<li>If you disable Games for Windows LIVE and actually use it then all your saves will disappear, you can find them in your <b>\My Documents\My Games\Fallout3\Saves\[name]</b> simply move them to the Saves folder.
+<li>When G4WL is disabled any DLC's you have will cease to function so use the "Move DLC's" button to get your DLC's working again. 
+</ul>
+
+<br><br><br><p class="heading"><a>Thanks</a></p>
+<br><b>Timeslip</b> - for permission to use his fake xlive.dll.
+<br><b>DarN</b> - for the xml code to remove the "LIVE" button from the Fallout 3's menus.
+<br><br>
+
+<br><br><p class="heading"><a>Version History</a></p>
+<p class="change"><b>v1.2.2 (08\05\2009)</b></p>
+<ul>
+<li>The fake xlive.dll will no longer be installed if Fallout 3 v1.0 is detected as it causes the game to freeze on exit.
+<li>Fixed *.bik files being placed into \Fallout 3\Data\ instead of \Fallout 3\Data\Video\, if you already run "Move DLC's" with Broken Steel simply move all *.bik's form your Data folder to your Video folder.
+</ul>
+
+<p class="change"><b>v1.2.1 (06\05\2009)</b></p>
+<ul>
+<li>Binding an action to the "Home" key will no longer reset other bindings on that action.
+<li>start_menu.xml is no longer in a BSA again (G4WLD.bsa) due to the "LIVE" button sometimes reappearing.
+<li>Added support for moving *.bik files out of the hidden G4WL folder (Broken Steel has *.bik's).
+</ul>
+
+<p class="change"><b>v1.2.0 (25\04\2009)</b></p>
+<ul>
+<li>Gave Games for Windows LIVE Disabler a more appropriate icon.
+<li>Improved the UI.
+<li>Games for Windows LIVE Disabler will now request administrator rights to run.
+<li>You'll now be able to point Games for Windows LIVE Disabler to your My Documents folder if it cannot detect it.
+<li>Fixed an instance where G4WL would appear disabled when in fact it wasn't.
+<li>Fixed all the Home key binding actions (except Forward) not binding to the correct action (oops!).
+<li>Prevented Games for Windows LIVE Disabler from running if Fallout 3\G.E.C.K\FO3Edit are running.
+<li>Fixed a few typos.
+<li>New Feature: you can now move all of the DLC's out of their "hidden" G4WL folder into your Fallout 3 folder, they'll also be automatically activated for your convenience.
+<li>Intergrated help (Games for Windows LIVE Disabler Readme.html) into the program, new "Help" button.
+<li>Enable\Disable buttons are now greyed out and a warning is displayed if something else disabled G4WL and Games for Windows LIVE Disabler cannot enable\disable G4WL because of it.
+<li>You can now bind the "Home" key to open\close the Pip-Boy, seems the Pip-Boy rebinding bug was an undocumented fix of the official patch v1.1.
+</ul>
+
+<p class="change"><b>v1.1.2 (30\03\2009)</b></p>
+<ul>
+<li>Fixed detection issue causing the enable\disable buttons not to be correctly disabled\enabled.
+</ul>
+
+<p class="change"><b>v1.1.1 (20\03\2009)</b></p>
+<ul>
+<li>Fixed the BSA causing strangeness with other BSA's.
+<li>Fixed the "Quit" button not being selectable if the "LIVE" button was removed when using an XBox controller.
+</ul>
+
+<p class="change"><b>v1.1.0 (10\03\2009)</b></p>
+<ul>
+<li>start_menu.xml (thing that removes the LIVE button) is now in a BSA, so no need to set bInvalidateOlderFiles to 1 anymore and fully compatible with any UI mods now.
+<li>Now using the new (crash free) version of the fake xlive.dll which will decrease Fallout 3 startup times since G4WL's dll files arn't being loaded anymore.
+<li>Removed Fallout3.exe version check, now works with all versions of Fallout 3.
+<li>Added more safty checks, no longer possible to start multiple instances of Games for Windows LIVE Disabler.
+<li>Merged the Fallout 3 Home Key Binder program into Games for Windows LIVE Disabler.
+</ul>
+
+<p class="change"><b>v1.0.1 (02\02\2009)</b></p>
+<ul>
+<li>"Disable Games for Windows LIVE" is now known as "Games for Windows LIVE Disabler".
+<li>Games for Windows LIVE Disabler: updated start_menu.xml so it now works correctly with the official v1.1 patch.
+<li>Games for Windows LIVE Disabler: removed option to allow Fallout 3 to start without Games for Windows LIVE being install as it no longer works with the official v1.1 patch.
+<li>Games for Windows LIVE Disabler: several optimizations\tweaks\improvments.
+<li>Fallout 3 Home Key Binder: several optimizations\tweaks\improvments.
+</ul>
+<p class="change"><b>v1.0.0 (12\12\2008)</b></p>
+<ul>
+<li>Ditched Inno Setup, now using AutoIt.
+<li>Fallout 3 Home Key Binder: Fixed not being able to bind Backward to the Home key.
+</ul>
+
+<br><br><b><u>Old Inno Setup Installer</u></b>
+<p class="change"><b>09\12\2008</b></p>
+<ul>
+<li>Fixed the binding option "Activate" disappearing from Settings>Controls>Action Mapping when the "LIVE" button was removed.
+</ul>
+<p class="change"><b>08\12\2008</b></p>
+<ul>
+<li>Added options to allow you to bind the "Home" key to whatever in-game action you want since it no longer opens Games for Windows LIVE.
+<li>Removing the "LIVE" button is now optional.
+<li>Removed fake xlive.dll, originally tested it and it worked fine but now it freezes my Fallout totally on exit.
+<li>Replaced fake xlive.dll option with a new option that will allow you to run Fallout 3 without Games for Windows LIVE being installed (GFWL needs to be installed for this option to work, it copies the original microsoft xlive.dll and msidcrl40.dll from your current installation of GFWL, after using this option GFWL can be uninstalled if you want).
+</ul>
+<p class="change"><b>07\12\2008</b></p>
+<ul>
+<li>First release.
+</ul>
+
+<br><br><p class="heading"><a name="notes">Links</a></p>
+<br><b><a href="http://www.fallout3nexus.com/downloads/file.php?id=1086">Visit Disable Games for Windows LIVE at Fallout 3 Nexus.</a></b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
