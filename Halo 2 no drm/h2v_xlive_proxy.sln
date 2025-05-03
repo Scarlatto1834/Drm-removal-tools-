@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "h2v_xlive_proxy", "h2v_xlive_proxy\h2v_xlive_proxy.vcproj", "{E3DFE61D-2916-480E-9DE8-4A20B931C717}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3DFE61D-2916-480E-9DE8-4A20B931C717}.Release|Win32.ActiveCfg = Release|Win32
+		{E3DFE61D-2916-480E-9DE8-4A20B931C717}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
